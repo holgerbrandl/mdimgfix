@@ -47,9 +47,11 @@ fun main(_args: Array<String>) {
 
     orphans.map { println(it) }
 
-    if(args.autoRemove){
+    println("orhpans are\n${orphans}")
+
+    if (args.autoRemove) {
         print("Removing orphans...")
-        orphans.forEach{it.delete()}
+        orphans.forEach { it.delete() }
         println("Done")
     }
 }
